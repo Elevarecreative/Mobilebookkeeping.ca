@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobilebookkeeping - Professional Bookkeeping Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .logo-gradient { background: linear-gradient(135deg, #1e40af 0%, #059669 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(30, 64, 175, 0.15); }
+        .professional-shadow { box-shadow: 0 4px 20px rgba(30, 64, 175, 0.08); }
+        .accent-border { border-left: 4px solid #1e40af; }
+        
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .animate-fade-in {
+            animation: fade-in 0.8s ease-out forwards;
+        }
+        
+        .stats-counter {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.05) 0%, rgba(5, 150, 105, 0.05) 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <img src="https://i.imgur.com/yXLJUng.png" alt="mobilebookkeeping logo" class="h-16 w-16 mr-4" onerror="this.style.display='none';">
+                    <div class="text-2xl font-bold bg-gradient-to-r from-blue-800 to-green-600 bg-clip-text text-transparent">mobilebookkeeping</div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-gray-700 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-blue-800">Home</a>
+                        <a href="#about" class="text-gray-700 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-blue-800">About</a>
+                        <a href="#services" class="text-gray-700 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-blue-800">Services</a>
+                        <a href="#blog" class="text-gray-700 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-blue-800">Insights</a>
+                        <a href="#faq" class="text-gray-700 hover:text-blue-800 px-4 py-2 text-sm font-medium transition-colors border-b-2 border-transparent hover:border-blue-800">FAQ</a>
+                        <a href="#contact" class="bg-gradient-to-r from-blue-800 to-green-600 text-white px-6 py-2 rounded-lg font-medium hover:shadow-lg transition-all">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-800 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">Home</a>
+                <a href="#about" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">About</a>
+                <a href="#services" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">Services</a>
+                <a href="#blog" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">Insights</a>
+                <a href="#faq" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">FAQ</a>
+                <a href="#contact" class="block px-4 py-3 text-gray-700 hover:text-blue-800 hover:bg-gray-50 rounded-lg">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden hero-pattern">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-20 -left-16 sm:left-10 w-32 h-32 sm:w-48 sm:h-48 bg-green-600 opacity-3 sm:opacity-5 rounded-full animate-bounce" style="animation-duration: 6s;"></div>
+            <div class="absolute bottom-20 -right-20 sm:right-10 w-40 h-40 sm:w-64 sm:h-64 bg-blue-800 opacity-3 sm:opacity-5 rounded-full animate-bounce" style="animation-duration: 8s; animation-delay: 3s;"></div>
+            <div class="absolute top-1/2 -right-32 sm:right-1/4 sm:translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] sm:w-[500px] sm:h-[500px] bg-gradient-to-r from-green-600 to-blue-800 opacity-2 sm:opacity-3 rounded-full animate-pulse" style="animation-duration: 4s; animation-delay: 1.5s;"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div class="animate-fade-in text-center lg:text-left">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 rounded-full px-4 sm:px-6 py-2 mb-6 sm:mb-8">
+                    <span class="w-2 h-2 bg-green-600 rounded-full mr-2 sm:mr-3 animate-pulse"></span>
+                    <span class="text-xs sm:text-sm font-semibold text-blue-800">Trusted by 20+ Businesses</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-8 leading-tight">
+                    <span class="text-blue-900 drop-shadow-sm">Your Books,</span><br>
+                    <span class="text-green-700 drop-shadow-sm">Our Expertise.</span>
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl text-gray-800 mb-4 sm:mb-6 leading-relaxed font-medium drop-shadow-sm px-2 sm:px-0">We keep your finances organized so you can focus on growing your business.</p>
+                <p class="text-base sm:text-lg text-gray-700 mb-8 sm:mb-12 max-w-2xl font-medium mx-auto lg:mx-0 px-2 sm:px-0">mobilebookkeeping helps small and medium-sized businesses stay on top of bookkeeping, accounting, and tax filings. With 20+ years of experience, we make finances simple, stress-free, and compliant.</p>
+
+                <div class="flex items-center justify-center lg:justify-start mt-8 sm:mt-12">
+                    <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3">
+                        <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Supporting Businesses Since 2015</span>
+                    </div>
+                </div>
+            </div>
+            <div class="relative animate-fade-in opacity-80 mt-8 lg:mt-0 px-4 sm:px-0" style="animation-delay: 0.3s;">
+                <div class="bg-white rounded-2xl shadow-lg p-4 sm:p-5 relative z-10 max-w-sm mx-auto lg:max-w-none">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-blue-800">Dashboard</h3>
+                        <div class="flex space-x-1">
+                            <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                            <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-xl p-3 sm:p-4 mb-4">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-xs">Revenue</span>
+                            <span class="text-base sm:text-lg font-bold text-green-600">$45,280</span>
+                        </div>
+                        <svg class="w-full h-12 sm:h-16" viewBox="0 0 200 50">
+                            <path d="M0,40 Q40,25 80,30 T160,15 T200,12" stroke="#059669" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="grid grid-cols-2 gap-2 sm:gap-3">
+                        <div class="bg-gray-50 rounded-xl p-2 sm:p-3 text-center">
+                            <div class="text-xs text-gray-500 mb-1">Expenses</div>
+                            <div class="text-sm font-bold">$28,450</div>
+                        </div>
+                        <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-2 sm:p-3 text-center">
+                            <div class="text-xs text-gray-500 mb-1">Profit</div>
+                            <div class="text-sm font-bold text-green-600">$16,830</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-white rounded-xl shadow-lg p-1.5 sm:p-2 animate-bounce hidden sm:block" style="animation-duration: 3s;">
+                    <div class="grid grid-cols-3 gap-1">
+                        <div class="col-span-3 bg-gray-100 rounded p-1 text-right text-xs font-mono mb-1">$12,450</div>
+                        <button class="bg-gray-100 hover:bg-gray-200 rounded text-xs p-1 transition-colors">7</button>
+                        <button class="bg-gray-100 hover:bg-gray-200 rounded text-xs p-1 transition-colors">8</button>
+                        <button class="bg-gray-100 hover:bg-gray-200 rounded text-xs p-1 transition-colors">9</button>
+                    </div>
+                </div>
+                <div class="absolute -bottom-1 sm:-bottom-2 -right-1 sm:-right-2 bg-white rounded-lg shadow-md p-1.5 sm:p-2 animate-pulse hidden sm:block" style="animation-delay: 2s;">
+                    <div class="text-xs font-bold text-blue-800 mb-1">RECEIPT</div>
+                    <div class="space-y-1 text-xs text-gray-600">
+                        <div class="flex justify-between">
+                            <span>Supplies</span>
+                            <span>$245</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Software</span>
+                            <span>$99</span>
+                        </div>
+                        <div class="border-t pt-1 flex justify-between font-semibold">
+                            <span>Total</span>
+                            <span>$344</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3 mb-8">
+                    <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Professional Services</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Comprehensive Financial Solutions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Delivering expert accounting services tailored to your business requirements with precision, compliance, and strategic insight.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-hover accent-border">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Professional Bookkeeping</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Comprehensive transaction recording, account reconciliation, and financial statement preparation with monthly, quarterly, and annual reporting cycles.</p>
+                    <div class="service-details hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200">
+                        <p class="text-gray-700 leading-relaxed">Our comprehensive bookkeeping services include daily transaction recording, bank reconciliation, accounts payable/receivable management, monthly financial statements, and detailed reporting. We ensure your financial records maintain the highest standards of accuracy and compliance with Canadian accounting principles. Our systematic approach includes expense categorization, invoice management, payroll processing, and comprehensive audit trails for complete financial transparency.</p>
+                    </div>
+                    <button onclick="toggleServiceDetails(this)" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                        <span class="learn-more-text">Learn More</span>
+                        <svg class="w-4 h-4 ml-2 learn-more-icon transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-hover accent-border">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            <path d="M8,12V14H16V12H8M8,16V18H13V16H8Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Financial Accounting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Advanced financial reporting, general ledger management, and regulatory compliance ensuring accurate representation of your business performance.</p>
+                    <div class="service-details hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200">
+                        <p class="text-gray-700 leading-relaxed">We provide advanced accounting services including financial statement preparation, general ledger maintenance, trial balance preparation, cash flow analysis, and detailed financial performance reporting. Our certified professionals help you understand your business performance through strategic financial insights, variance analysis, budget comparisons, and comprehensive financial health assessments that support informed decision-making.</p>
+                    </div>
+                    <button onclick="toggleServiceDetails(this)" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                        <span class="learn-more-text">Learn More</span>
+                        <svg class="w-4 h-4 ml-2 learn-more-icon transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-hover accent-border">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M9.5,11A0.5,0.5 0 0,0 9,11.5V13H7.5A0.5,0.5 0 0,0 7,13.5A0.5,0.5 0 0,0 7.5,14H9V15.5A0.5,0.5 0 0,0 9.5,16A0.5,0.5 0 0,0 10,15.5V14H11.5A0.5,0.5 0 0,0 12,13.5A0.5,0.5 0 0,0 11.5,13H10V11.5A0.5,0.5 0 0,0 9.5,11M14.5,16A0.5,0.5 0 0,0 14,16.5A0.5,0.5 0 0,0 14.5,17A0.5,0.5 0 0,0 15,16.5A0.5,0.5 0 0,0 14.5,16M16.5,14A0.5,0.5 0 0,0 16,14.5A0.5,0.5 0 0,0 16.5,15A0.5,0.5 0 0,0 17,14.5A0.5,0.5 0 0,0 16.5,14Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Tax Preparation & Filing</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Complete tax preparation services including corporate returns, HST/GST filings, and catch-up services to ensure full regulatory compliance.</p>
+                    <div class="service-details hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200">
+                        <p class="text-gray-700 leading-relaxed">Our tax services encompass corporate tax preparation, HST/GST filing, personal tax returns for business owners, strategic tax planning, quarterly remittances, and comprehensive catch-up services for businesses requiring regulatory compliance assistance. We ensure maximum deductions, minimize tax liability, and maintain full compliance with Canada Revenue Agency requirements while providing year-round tax planning strategies.</p>
+                    </div>
+                    <button onclick="toggleServiceDetails(this)" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                        <span class="learn-more-text">Learn More</span>
+                        <svg class="w-4 h-4 ml-2 learn-more-icon transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 card-hover accent-border">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">Strategic Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Expert financial analysis, budgeting strategies, and business advisory services designed to optimize profitability and sustainable growth.</p>
+                    <div class="service-details hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-lg border border-blue-200">
+                        <p class="text-gray-700 leading-relaxed">Our strategic consulting services include financial analysis, budgeting and forecasting, cash flow management, business planning, profitability optimization, and industry-specific advisory services designed to enhance your competitive position and sustainable growth. We provide actionable insights for cost reduction, revenue enhancement, operational efficiency improvements, and strategic decision support for business expansion and investment opportunities.</p>
+                    </div>
+                    <button onclick="toggleServiceDetails(this)" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                        <span class="learn-more-text">Learn More</span>
+                        <svg class="w-4 h-4 ml-2 learn-more-icon transition-transform" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+    <section id="consultation" class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50 border-t border-gray-100">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
+            <!-- Badge -->
+            <img src="https://i.imgur.com/WQeXHPI.png" alt="Professional Certification Badge" class="absolute right-4 -top-6 h-16 sm:right-6 sm:-top-8 sm:h-20" onerror="this.style.display='none';">
+            
+            <div class="bg-white rounded-2xl professional-shadow p-12 border border-gray-100">
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Complimentary Business Consultation</h2>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
+                    Schedule a comprehensive financial assessment with our certified professionals. New clients receive 
+                    <strong class="text-green-600">50% discount on first-year</strong> 
+                    <span class="inline-flex items-center gap-2 mx-1">
+                        QuickBooks
+                        <img src="https://i.imgur.com/89K5p9x.png" alt="QuickBooks Certified" class="h-6" onerror="this.style.display='none';">
+                    </span>
+                    implementation and training services.
+                </p>
+                <div class="flex justify-center">
+                    <a href="#contact" class="bg-gradient-to-r from-blue-800 to-green-600 hover:from-blue-900 hover:to-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl">
+                        Schedule Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3 mb-8">
+                    <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Industry Insights</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Expert Financial Guidance</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Stay informed with professional insights on accounting best practices, regulatory updates, and strategic financial management for Canadian businesses.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-2xl professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <div class="p-8">
+                        <div class="w-12 h-12 logo-gradient rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">The Strategic Importance of Professional Bookkeeping for SMEs</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Discover how accurate financial record-keeping serves as the foundation for informed business decisions, regulatory compliance, and sustainable growth strategies.</p>
+                        <a href="#post1" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                            Read Full Article
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <div class="p-8">
+                        <div class="w-12 h-12 logo-gradient rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">Critical Financial Management Errors That Impact Business Success</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Learn about common accounting mistakes that can compromise your business operations and discover professional strategies to maintain financial accuracy and compliance.</p>
+                        <a href="#post2" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                            Read Full Article
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="bg-white rounded-2xl professional-shadow hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 overflow-hidden">
+                    <div class="p-8">
+                        <div class="w-12 h-12 logo-gradient rounded-xl flex items-center justify-center mb-6">
+                            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21C5,22.1 5.9,23 7,23H17C18.1,23 19,22.1 19,21V3C19,1.89 18.1,1 17,1Z"/>
+                                <path d="M9,7H15V9H9V7M9,11H15V13H9V11M9,15H13V17H9V15Z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-4 leading-tight">Maximizing Efficiency Through Mobile Financial Management Solutions</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">Explore how modern mobile accounting technologies enhance operational efficiency, provide real-time financial insights, and support strategic business decision-making.</p>
+                        <a href="#post3" class="text-blue-800 font-semibold hover:text-green-600 transition-colors flex items-center">
+                            Read Full Article
+                            <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section id="post1" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 hidden">
+        <div class="bg-white rounded-2xl professional-shadow p-12 border border-gray-100">
+            <button onclick="showBlogList()" class="text-blue-800 hover:text-green-600 mb-8 font-semibold flex items-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                </svg>
+                Back to Insights
+            </button>
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">The Strategic Importance of Professional Bookkeeping for SMEs</h2>
+            <div class="prose prose-lg text-gray-600 max-w-none leading-relaxed">
+                <p class="text-xl mb-6">Professional bookkeeping extends far beyond simple transaction recording—it serves as the strategic foundation for informed business decision-making and sustainable growth.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Financial Clarity Drives Strategic Decisions</h3>
+                <p>Accurate financial records provide essential insights into cash flow patterns, profitability trends, and operational efficiency metrics. This data enables business owners to make informed decisions about resource allocation, expansion opportunities, and cost optimization strategies.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Regulatory Compliance and Risk Management</h3>
+                <p>Maintaining precise financial records ensures compliance with Canadian tax regulations and accounting standards. Professional bookkeeping minimizes audit risks, prevents costly penalties, and establishes credibility with financial institutions, investors, and regulatory bodies.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Building Stakeholder Confidence</h3>
+                <p>Transparent, professionally maintained financial records build trust with lenders, investors, and business partners. This credibility facilitates access to capital, favorable lending terms, and strategic partnerships essential for business growth.</p>
+                
+                <p class="text-lg font-medium text-blue-800 mt-8">At mobilebookkeeping, our certified professionals ensure your financial records maintain the highest standards of accuracy and compliance, providing you with the strategic insights necessary for confident business leadership.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="post2" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 hidden">
+        <div class="bg-white rounded-2xl professional-shadow p-12 border border-gray-100">
+            <button onclick="showBlogList()" class="text-blue-800 hover:text-green-600 mb-8 font-semibold flex items-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                </svg>
+                Back to Insights
+            </button>
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Critical Financial Management Errors That Impact Business Success</h2>
+            <div class="prose prose-lg text-gray-600 max-w-none leading-relaxed">
+                <p class="text-xl mb-6">Understanding and avoiding common financial management mistakes is essential for maintaining business integrity and ensuring long-term success.</p>
+                
+                <div class="bg-gradient-to-r from-red-50 to-orange-50 border-l-4 border-red-500 p-6 mb-8">
+                    <h3 class="text-xl font-bold text-red-800 mb-4">Critical Errors to Avoid:</h3>
+                    <ol class="space-y-4 text-gray-700">
+                        <li><strong class="text-red-700">Commingling Personal and Business Finances:</strong> Mixing accounts compromises financial clarity and complicates tax preparation while potentially jeopardizing legal protections.</li>
+                        <li><strong class="text-red-700">Neglecting Regular Account Reconciliation:</strong> Failing to reconcile accounts monthly can mask errors, fraud, or discrepancies that compound over time.</li>
+                        <li><strong class="text-red-700">Inadequate Expense Documentation:</strong> Poor receipt management and expense tracking can result in missed deductions and audit complications.</li>
+                        <li><strong class="text-red-700">Delayed Financial Record Updates:</strong> Procrastinating on bookkeeping creates backlogs that increase error rates and stress during critical periods.</li>
+                        <li><strong class="text-red-700">Attempting DIY Complex Accounting:</strong> Handling sophisticated financial matters without professional expertise often results in costly mistakes and missed opportunities.</li>
+                    </ol>
+                </div>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Professional Solutions</h3>
+                <p>Implementing systematic financial management processes and partnering with certified accounting professionals ensures accuracy, compliance, and strategic financial insight. Our team at mobilebookkeeping provides comprehensive solutions to prevent these common pitfalls while optimizing your financial operations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="post3" class="py-20 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 hidden">
+        <div class="bg-white rounded-2xl professional-shadow p-12 border border-gray-100">
+            <button onclick="showBlogList()" class="text-blue-800 hover:text-green-600 mb-8 font-semibold flex items-center transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/>
+                </svg>
+                Back to Insights
+            </button>
+            <h2 class="text-4xl font-bold text-gray-900 mb-8">Maximizing Efficiency Through Mobile Financial Management Solutions</h2>
+            <div class="prose prose-lg text-gray-600 max-w-none leading-relaxed">
+                <p class="text-xl mb-6">Modern mobile accounting technologies revolutionize financial management by providing real-time access, enhanced accuracy, and strategic business insights.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Real-Time Financial Visibility</h3>
+                <p>Mobile financial management enables immediate transaction recording and instant access to current financial data. This real-time visibility supports agile decision-making and proactive financial management rather than reactive responses to outdated information.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Enhanced Accuracy and Efficiency</h3>
+                <p>Digital transaction capture reduces manual data entry errors while automated categorization and reconciliation processes significantly improve accuracy rates. Cloud-based systems ensure data consistency and eliminate version control issues.</p>
+                
+                <h3 class="text-2xl font-bold text-gray-900 mt-8 mb-4">Seamless Professional Collaboration</h3>
+                <p>Mobile platforms facilitate seamless collaboration between business owners and their accounting professionals. Shared access to current financial data enables more effective advisory services and strategic planning sessions.</p>
+                
+                <div class="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-6 mt-8">
+                    <p class="text-lg font-medium text-blue-800">mobilebookkeeping's mobile-first approach ensures your financial records remain current, accessible, and strategically valuable, providing the foundation for confident business growth and operational excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3 mb-8">
+                    <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Client Success Stories</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Trusted by Leading Businesses</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Discover how our professional accounting services have helped businesses achieve financial clarity, compliance, and strategic growth.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Lumecare Cleaning Testimonial -->
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 border border-gray-100 relative">
+                    <div class="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-r from-blue-800 to-green-600 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                        <blockquote class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "mobilebookkeeping transformed our tax filing process completely. Their expertise in handling our cleaning service's complex deductions and quarterly filings has saved us thousands in potential penalties. The team's attention to detail and proactive communication made tax season stress-free for the first time in years."
+                        </blockquote>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-800 to-green-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">LC</span>
+                        </div>
+                        <div>
+                            <div class="text-blue-800 font-semibold text-lg">Lumecare Cleaning Services</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elevare Creative Testimonial -->
+                <div class="bg-white rounded-2xl p-8 professional-shadow hover:shadow-xl transition-all duration-300 border border-gray-100 relative">
+                    <div class="absolute -top-4 -left-4 w-8 h-8 bg-gradient-to-r from-blue-800 to-green-600 rounded-full flex items-center justify-center">
+                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 13V5a2 2 0 00-2-2H4a2 2 0 00-2 2v8a2 2 0 002 2h3l3 3 3-3h3a2 2 0 002-2zM5 7a1 1 0 011-1h8a1 1 0 110 2H6a1 1 0 01-1-1zm1 3a1 1 0 100 2h3a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="mb-6">
+                        <div class="flex text-yellow-400 mb-4">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                        </div>
+                        <blockquote class="text-gray-700 text-lg leading-relaxed mb-6">
+                            "As a creative agency, we needed financial accounting that understood our project-based revenue and complex client billing. mobilebookkeeping's strategic approach to our financial management has provided clarity we never had before. Their monthly reports help us make informed decisions about growth and resource allocation."
+                        </blockquote>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-gradient-to-r from-blue-800 to-green-600 rounded-full flex items-center justify-center mr-4">
+                            <span class="text-white font-bold text-lg">EC</span>
+                        </div>
+                        <div>
+                            <div class="text-blue-800 font-semibold text-lg">Elevare Creative</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust Indicators -->
+            <div class="mt-16 text-center">
+                <div class="inline-flex items-center bg-white rounded-full px-8 py-4 professional-shadow border border-gray-100">
+                    <div class="flex items-center">
+                        <svg class="w-5 h-5 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm font-semibold text-gray-700">Supporting Businesses Since 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-gray-50 via-white to-blue-50">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3 mb-8">
+                    <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Professional Consultation</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Connect With Our Experts</h2>
+                <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">Schedule a comprehensive consultation to discuss your financial management requirements and discover how our professional services can optimize your business operations.</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="bg-white rounded-2xl professional-shadow p-12 border border-gray-100">
+                <form id="contact-form" action="https://formsubmit.co/mobilebookkeeping@yahoo.ca" method="POST" class="grid gap-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <label class="block">
+                            <span class="text-gray-900 font-semibold mb-2 block">Full Name *</span>
+                            <input type="text" name="name" required class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-900 font-semibold mb-2 block">Business Email *</span>
+                            <input type="email" name="email" required class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+                        </label>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <label class="block">
+                            <span class="text-gray-900 font-semibold mb-2 block">Company Name</span>
+                            <input type="text" name="company" class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+                        </label>
+                        <label class="block">
+                            <span class="text-gray-900 font-semibold mb-2 block">Phone Number</span>
+                            <input type="tel" name="phone" class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+                        </label>
+                    </div>
+                    <label class="block">
+                        <span class="text-gray-900 font-semibold mb-2 block">Service Interest</span>
+                        <select name="service" class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all bg-gray-50 focus:bg-white">
+                            <option value="">Select a service...</option>
+                            <option value="bookkeeping">Professional Bookkeeping</option>
+                            <option value="accounting">Financial Accounting</option>
+                            <option value="tax">Tax Preparation & Filing</option>
+                            <option value="consulting">Strategic Consulting</option>
+                            <option value="comprehensive">Comprehensive Package</option>
+                        </select>
+                    </label>
+                    <label class="block">
+                        <span class="text-gray-900 font-semibold mb-2 block">Message *</span>
+                        <textarea name="message" rows="6" required placeholder="Please describe your business requirements and how we can assist you..." class="w-full px-4 py-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none transition-all bg-gray-50 focus:bg-white"></textarea>
+                    </label>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Professional Consultation Request - mobilebookkeeping">
+                    <button type="submit" class="bg-gradient-to-r from-blue-800 to-green-600 hover:from-blue-900 hover:to-green-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all shadow-lg hover:shadow-xl">Submit Consultation Request</button>
+                </form>
+
+                <!-- Thank You Message -->
+                <div id="thank-you" class="hidden mt-8 p-8 bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-xl">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">✅</div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Consultation Request Received</h3>
+                        <p class="text-gray-600 mb-4">Thank you for your interest in our professional services. We will contact you within 24 hours to schedule your complimentary consultation.</p>
+                        <p class="text-sm text-gray-500">For immediate assistance, please call (416) 578-2065</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Information -->
+            <div class="grid md:grid-cols-2 gap-8 mt-16 max-w-2xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Professional Email</h3>
+                    <p class="text-gray-600">
+                        <a href="mailto:Mobilebookkeeping@yahoo.ca" class="hover:text-blue-800 transition-colors">Mobilebookkeeping@yahoo.ca</a>
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 logo-gradient rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Business Hours</h3>
+                    <div class="text-gray-600 space-y-1">
+                        <p><span class="font-medium">Mon–Fri:</span> 9:00 AM – 5:00 PM</p>
+                        <p><span class="font-medium">Saturday:</span> 10:00 AM – 1:00 PM</p>
+                        <p><span class="font-medium">Sunday:</span> Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center bg-gradient-to-r from-blue-50 to-green-50 border border-blue-200 rounded-full px-6 py-3 mb-8">
+                    <span class="text-sm font-semibold text-blue-800 uppercase tracking-wide">Frequently Asked Questions</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Professional Service Inquiries</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">Comprehensive answers to common questions about our professional accounting services and business processes.</p>
+            </div>
+            
+            <div class="space-y-6">
+                <!-- Q1 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 cursor-pointer hover:shadow-lg transition-all duration-300 professional-shadow" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-gray-900">What distinguishes mobile bookkeeping from traditional accounting services?</h3>
+                        <svg class="w-6 h-6 text-blue-800 transform transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <p class="mt-6 text-gray-600 leading-relaxed hidden">Mobile bookkeeping leverages advanced cloud-based technologies and secure digital platforms to provide real-time financial management services. This approach enables immediate access to current financial data, seamless collaboration between clients and professionals, and enhanced accuracy through automated processes—all while maintaining the highest security standards for sensitive financial information.</p>
+                </div>
+                
+                <!-- Q2 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 cursor-pointer hover:shadow-lg transition-all duration-300 professional-shadow" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-gray-900">Which business types benefit most from your professional services?</h3>
+                        <svg class="w-6 h-6 text-blue-800 transform transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <p class="mt-6 text-gray-600 leading-relaxed hidden">Our expertise serves small to medium enterprises, professional service providers, retail businesses, contractors, and emerging startups. We specialize in organizations requiring comprehensive financial management solutions while maintaining the flexibility to adapt our services to unique industry requirements and business models.</p>
+                </div>
+                
+                <!-- Q4 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-8 cursor-pointer hover:shadow-lg transition-all duration-300 professional-shadow" onclick="toggleFaq(this)">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-xl font-bold text-gray-900">Do you provide comprehensive tax preparation and filing services?</h3>
+                        <svg class="w-6 h-6 text-blue-800 transform transition-transform duration-300" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <p class="mt-6 text-gray-600 leading-relaxed hidden">Yes, we provide complete tax preparation services including corporate tax returns, HST/GST filings, personal tax returns for business owners, and strategic tax planning. Our systematic approach to maintaining accurate financial records throughout the year ensures efficient, accurate tax preparation and optimal compliance with Canadian Revenue Agency requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-900 to-green-800 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Brand -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <img src="https://i.imgur.com/yXLJUng.png" alt="mobilebookkeeping logo" class="h-12 w-12 mr-3" onerror="this.style.display='none';">
+                        <h2 class="text-2xl font-bold">mobilebookkeeping</h2>
+                    </div>
+                    <p class="text-blue-100 leading-relaxed mb-6 max-w-md">Delivering professional financial management solutions with over two decades of expertise. Trusted by Canadian businesses for accurate, compliant, and strategic accounting services.</p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:Mobilebookkeeping@yahoo.ca" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                        </a>
+                        <a href="tel:4165782065" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/mobile_bookkeeping/?igsh=MTZ4eGJwZGhjdWlycA%3D%3D&utm_source=qr#" target="_blank" class="bg-white bg-opacity-20 hover:bg-opacity-30 p-3 rounded-lg transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Professional Services</h3>
+                    <ul class="space-y-3 text-blue-100">
+                        <li><a href="#services" class="hover:text-white transition-colors">Bookkeeping Services</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Financial Accounting</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Tax Preparation</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Business Consulting</a></li>
+                        <li><a href="#consultation" class="hover:text-white transition-colors">Free Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-3 text-blue-100">
+                        <p>
+                            <a href="tel:4165782065" class="hover:text-white transition-colors">
+                                (416) 578-2065
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-12 pt-8 text-center text-blue-100">
+                <p>&copy; 2025 mobilebookkeeping. All rights reserved. | Professional Accounting Services | Designed by Elevare Creative</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div id="chat-widget" class="fixed bottom-6 right-6 z-50">
+        <!-- Chat Button -->
+        <button id="chat-button" class="logo-gradient hover:shadow-xl text-white rounded-full p-4 shadow-lg transition-all duration-300 hover:scale-110">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/>
+            </svg>
+        </button>
+        
+        <!-- Chat Box -->
+        <div id="chat-box" class="hidden absolute bottom-16 right-0 w-80 bg-white rounded-2xl professional-shadow border border-gray-100">
+            <!-- Chat Header -->
+            <div class="logo-gradient text-white p-6 rounded-t-2xl">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h3 class="font-bold text-lg">Professional Consultation</h3>
+                        <p class="text-blue-100 text-sm">How can we assist you today?</p>
+                    </div>
+                    <button id="chat-close" class="text-white hover:text-blue-200 transition-colors">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="p-6 h-64 overflow-y-auto bg-gray-50">
+                <div class="mb-6">
+                    <div class="bg-white p-4 rounded-xl professional-shadow border border-gray-100">
+                        <p class="text-gray-700">Welcome! I'm here to help you learn about our professional accounting services. How can I assist you today?</p>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <p class="text-xs font-medium text-gray-500 mb-3 uppercase tracking-wide">Quick Questions:</p>
+                    <div class="space-y-2">
+                        <button onclick="askQuickQuestion('What are your service rates?')" class="w-full text-left bg-white hover:bg-blue-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700 transition-all hover:border-blue-300">What are your service rates?</button>
+                        <button onclick="askQuickQuestion('What professional services do you offer?')" class="w-full text-left bg-white hover:bg-blue-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700 transition-all hover:border-blue-300">What services do you offer?</button>
+                        <button onclick="askQuickQuestion('How do I schedule a consultation?')" class="w-full text-left bg-white hover:bg-blue-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700 transition-all hover:border-blue-300">How do I get started?</button>
+                        <button onclick="askQuickQuestion('What are your business hours?')" class="w-full text-left bg-white hover:bg-blue-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-700 transition-all hover:border-blue-300">What are your hours?</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chat Input -->
+            <div class="p-6 border-t border-gray-100">
+                <div class="flex gap-3">
+                    <input type="text" id="chat-input" placeholder="Type your message..." class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm bg-gray-50 focus:bg-white transition-all">
+                    <button id="chat-send" class="logo-gradient hover:shadow-lg text-white px-4 py-3 rounded-lg transition-all">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="text-xs text-gray-500 mt-3">Professional response within minutes during business hours</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            const navHeight = 80; // Height of fixed navigation
+            const elementPosition = element.offsetTop - navHeight;
+            
+            window.scrollTo({
+                top: elementPosition,
+                behavior: 'smooth'
+            });
+        }
+
+        // Add click handlers to navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const sectionId = this.getAttribute('href').substring(1);
+                scrollToSection(sectionId);
+                
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+
+        // Service details toggle function
+        function toggleServiceDetails(button) {
+            const serviceCard = button.closest('.bg-white');
+            const detailsDiv = serviceCard.querySelector('.service-details');
+            const learnMoreText = button.querySelector('.learn-more-text');
+            const icon = button.querySelector('.learn-more-icon');
+            
+            if (detailsDiv.classList.contains('hidden')) {
+                // Show details
+                detailsDiv.classList.remove('hidden');
+                learnMoreText.textContent = 'Show Less';
+                icon.classList.add('rotate-180');
+            } else {
+                // Hide details
+                detailsDiv.classList.add('hidden');
+                learnMoreText.textContent = 'Learn More';
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Blog navigation functions
+        function showBlogPost(postId) {
+            // Hide blog list
+            document.getElementById('blog').style.display = 'none';
+            
+            // Hide all posts
+            document.querySelectorAll('[id^="post"]').forEach(post => {
+                post.classList.add('hidden');
+            });
+            
+            // Show selected post
+            document.getElementById(postId).classList.remove('hidden');
+            
+            // Scroll to the post smoothly
+            setTimeout(() => {
+                scrollToSection(postId);
+            }, 100);
+        }
+
+        function showBlogList() {
+            // Show blog list
+            document.getElementById('blog').style.display = 'block';
+            
+            // Hide all posts
+            document.querySelectorAll('[id^="post"]').forEach(post => {
+                post.classList.add('hidden');
+            });
+            
+            // Scroll to blog section
+            scrollToSection('blog');
+        }
+
+        // Handle blog post links
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#post"]').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const postId = this.getAttribute('href').substring(1);
+                    showBlogPost(postId);
+                });
+            });
+        });
+
+        // FAQ toggle function with enhanced animation
+        function toggleFaq(element) {
+            const answer = element.querySelector('p');
+            const icon = element.querySelector('svg');
+            
+            answer.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Contact form handling
+        const contactForm = document.getElementById('contact-form');
+        const thankYouMessage = document.getElementById('thank-you');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Show loading state
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Submitting Request...';
+            submitButton.disabled = true;
+            
+            // Submit form
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm)
+            }).then(() => {
+                contactForm.style.display = 'none';
+                thankYouMessage.classList.remove('hidden');
+            }).catch(() => {
+                // Reset button on error
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+                alert('There was an error submitting your request. Please try again or contact us directly.');
+            });
+        });
+
+        // Chat widget functionality
+        const chatButton = document.getElementById('chat-button');
+        const chatBox = document.getElementById('chat-box');
+        const chatClose = document.getElementById('chat-close');
+        const chatInput = document.getElementById('chat-input');
+        const chatSend = document.getElementById('chat-send');
+        const chatMessages = document.getElementById('chat-messages');
+
+        // Toggle chat box
+        chatButton.addEventListener('click', () => {
+            chatBox.classList.toggle('hidden');
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatBox.classList.add('hidden');
+        });
+
+        // Send message function
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message) {
+                // Add user message
+                addMessage(message, 'user');
+                chatInput.value = '';
+                
+                // Simulate response after a short delay
+                setTimeout(() => {
+                    addAutoResponse(message);
+                }, 1000);
+            }
+        }
+
+        // Add message to chat
+        function addMessage(text, sender) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `mb-4 ${sender === 'user' ? 'text-right' : ''}`;
+            
+            const messageContent = document.createElement('div');
+            messageContent.className = `inline-block p-4 rounded-xl shadow-sm max-w-xs ${
+                sender === 'user' 
+                    ? 'logo-gradient text-white' 
+                    : 'bg-white text-gray-700 border border-gray-100'
+            }`;
+            messageContent.innerHTML = `<p class="text-sm leading-relaxed">${text}</p>`;
+            
+            messageDiv.appendChild(messageContent);
+            chatMessages.appendChild(messageDiv);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Auto-response based on keywords
+        function addAutoResponse(userMessage) {
+            const message = userMessage.toLowerCase();
+            let response = '';
+
+            if (message.includes('price') || message.includes('cost') || message.includes('fee') || message.includes('rate')) {
+                response = 'Our professional service rates are customized based on your specific business requirements. We offer competitive pricing with new clients receiving 50% off their first year! Would you like to schedule a complimentary consultation to discuss your needs?';
+            } else if (message.includes('service') || message.includes('bookkeeping') || message.includes('accounting')) {
+                response = 'We provide comprehensive professional services including bookkeeping, financial accounting, tax preparation, and strategic business consulting. Which specific service area interests you most?';
+            } else if (message.includes('started') || message.includes('begin') || message.includes('start') || message.includes('consultation')) {
+                response = 'Getting started is simple! Contact us at Mobilebookkeeping@yahoo.ca or call (416) 578-2065 to schedule your complimentary consultation. We\'ll assess your needs and create a customized service plan for your business.';
+            } else if (message.includes('contact') || message.includes('phone') || message.includes('call')) {
+                response = 'You can reach our professional team at (416) 578-2065 or email Mobilebookkeeping@yahoo.ca. We\'re available Monday-Friday 9AM-5PM and Saturday 10AM-1PM for consultations.';
+            } else if (message.includes('hello') || message.includes('hi') || message.includes('hey')) {
+                response = 'Hello! Thank you for your interest in our professional accounting services. How can I assist you with your business financial management needs today?';
+            } else if (message.includes('hours') || message.includes('open') || message.includes('available')) {
+                response = 'Our business hours are Monday-Friday 9:00 AM-5:00 PM and Saturday 10:00 AM-1:00 PM. We\'re closed Sundays. How can we help you today?';
+            } else {
+                response = 'Thank you for your inquiry! For detailed information about our professional services, please email Mobilebookkeeping@yahoo.ca or call (416) 578-2065. We provide prompt, professional responses to all business inquiries.';
+            }
+
+            addMessage(response, 'bot');
+        }
+
+        // Send message on button click
+        chatSend.addEventListener('click', sendMessage);
+
+        // Send message on Enter key
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                sendMessage();
+            }
+        });
+
+        // Quick question function
+        function askQuickQuestion(question) {
+            addMessage(question, 'user');
+            setTimeout(() => {
+                addAutoResponse(question);
+            }, 1000);
+        }
+
+
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'97f9db73f121ac27',t:'MTc1Nzk1NzQ4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
